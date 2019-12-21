@@ -13,7 +13,7 @@ node_modules
 .DS_Store
 *.jpg
 *.jpeg
-*.png
+#*.png
 *.psd
 *.pdf
 *.zip

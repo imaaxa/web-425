@@ -1,0 +1,16 @@
+<p>On the internet the ability to navigate around any given site is vital. This can take the form of directly entering the URL into the address bar or clicking on links embedded into the page. In the world of angular and SPA, comes with the issue of how to display the newly requested information.</p>
+<p>Fortunatly Angular has the Routing module. This allows us to create a list of URL destinations and map them to the components that will do the work of assembling the data that has been requested.</p>
+<p>The Router-Outlet now comes into play. "The Router-Outlet is a directive that’s available from the router library where the Router inserts the component that gets matched based on the current browser’s URL. (Bouchefra, 2018)" This means the once the data is ready to be shown to the user, Angular will find the Router-Outlet and replace its content with the new data as a sibling.</p>
+<p>Angular applications may have multiple Router-Outlets available to use. The Router-Outlet that does not have a name attribute will be considered the primary.</p>
+<pre>&lt;router-outlet&gt;&lt;/router-outlet&gt;</pre>
+<p>All of the others will need to have a name attribute in order to be targeted.</p>
+<pre>&lt;router-outlet name="another-outlet"&gt;&lt;/router-outlet&gt;</pre>
+<p>In conclusion, whether you are needing just a single area to place content, or multip locations, angular with the Router-Outlet system has you covered.</p>
+<p>References:</p>
+<p>Bouchefra, A. (2018, November 28). A Complete Guide To Routing In Angular. Retrieved January 7, 2020, from https://www.smashingmagazine.com/2018/11/a-complete-guide-to-routing-in-angular/.</p>
+
+<p>It is great to be able to direct requested data to different parts of the page, and not have it just dumped into the same location every time something is clicked.</p>
+<p>"A component has one associated primary route and can have auxiliary routes. Auxiliary routes enable developers to navigate multiple routes at the same time. (Bouchefra, 2018)"</p>
+<p>All you have to do is add an outlet attribute to the end of the route parameter: { path: "contacts", component: ContactListComponent, outlet: "outlet1" }</p>
+<p>References:</p>
+<p>Bouchefra, A. (2018, November 28). A Complete Guide To Routing In Angular. Retrieved January 7, 2020, from https://www.smashingmagazine.com/2018/11/a-complete-guide-to-routing-in-angular/.</p>

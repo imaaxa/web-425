@@ -39,7 +39,7 @@ import { FruitService } from './fruit.service';
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let fruit of fruits | async>
+            <tr *ngFor="let fruit of fruits | async">
               <td>{{ fruit.id }}</td>
               <td>{{ fruit.name }}</td>
               <td>{{ fruit.pricePerPound }}</td>

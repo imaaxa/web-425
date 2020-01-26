@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Fruit } from './fruit';
+import { Fruit } from "./fruit";
 import { Observable } from "rxjs";
-import 'rxjs/add/observable/of';
+import "rxjs/add/observable/of";
 
 @Injectable()
 export class FruitService {

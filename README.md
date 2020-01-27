@@ -6,9 +6,8 @@ WEB425-331H-343H Angular With Typescript
 * Professor Mohamed Eltayeb - Bellevue University
 * Cory Gilliam - Bellevue University
 
-* Book - Angular Development with Typescript, Second Edition 2018
-
-    -- [ISBN: 9781617295348](https://www.manning.com/books/angular-development-with-typescript-second-edition?query=9781617295348#toc)
+## Book
+[Angular Development with Typescript, Second Edition](https://www.manning.com/books/angular-development-with-typescript-second-edition?query=9781617295348#toc) (2018) ISBN: 9781617295348
 
 [Week 1](https://github.com/imaaxa/web-425/tree/master/week-1)
 ------

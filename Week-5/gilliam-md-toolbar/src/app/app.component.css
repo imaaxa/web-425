@@ -1,0 +1,15 @@
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.wrapper {
+  padding: 70px 70px 0;
+  display: block;
+}

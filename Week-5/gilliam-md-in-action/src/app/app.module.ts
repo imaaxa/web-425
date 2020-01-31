@@ -5,6 +5,7 @@ import {
   MatFormFieldModule,
   MatIcon,
   MatIconModule,
+  MatInputModule,
   MatMenuModule,
   MatToolbarModule
 } from "@angular/material";
@@ -12,11 +13,15 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MenuComponent } from './menu/menu.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatCardModule,
     MatFormFieldModule,
     MatIconModule,
+    MatInputModule,
     MatMenuModule,
     MatToolbarModule,
     FlexLayoutModule

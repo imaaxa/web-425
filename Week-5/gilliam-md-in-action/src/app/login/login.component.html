@@ -1,43 +1,38 @@
 <div class="frm-login">
-  <mat-card
-    fxLayout="column"
-    fxLayoutAlign="left"
-    class="login-panel frm-login-panel">
-
-    <mat-card-header
-      fxFlex=150px
-      class="frm-login-header">
-      <mat-card-title>Login Form</mat-card-title>
-      <mat-card-subtitle>You must be logged in before you area allowed to run amuck on the site.</mat-card-subtitle>
-    </mat-card-header>
-
-    <mat-card-content
+  <form [formGroup]="myForm">
+    <mat-card
       fxLayout="column"
-      fxFlex=110px
-      class="frm-login-body">
+      fxLayoutAlign="left"
+      class="login-panel frm-login-panel">
 
-      <mat-form-field>
-        <input matInput placeholder="Username">
-      </mat-form-field>
+      <mat-card-header fxFlex=120px class="frm-login-header">
+        <mat-card-title>Login Form</mat-card-title>
+        <mat-card-subtitle>You must be logged in before you area allowed to run amuck on the site.</mat-card-subtitle>
+      </mat-card-header>
 
-      <mat-form-field>
-        <input type="password" matInput placeholder="Password">
-      </mat-form-field>
+      <mat-card-content fxLayout="column" fxFlex=120px class="frm-login-body">
 
-    </mat-card-content>
+        <mat-form-field>
+          <input matInput placeholder="Username" formControlName="userName">
+          <mat-error *ngIf="userName.touched">
+            You need to enter a valid username.
+          </mat-error>
+        </mat-form-field>
 
-    <mat-card-actions class="frm-login-actions">
-      <button
-        mat-raised-button
-        class="btn-login">
-        Cancel
-      </button>
-      <button
-        mat-raised-button
-        class="btn-login">
-        Sign In
-      </button>
-    </mat-card-actions>
+        <mat-form-field hintLabel="Min One uppercase, One lowercase, One number, Min 8 characters">
+          <input type="password" matInput placeholder="Password" formControlName="passWord">
+          <mat-error *ngIf="passWord.invalid && passWord.touched">
+            You need to enter a valid password.
+          </mat-error>
+        </mat-form-field>
 
-  </mat-card>
+      </mat-card-content>
+
+      <mat-card-actions class="frm-login-actions">
+        <button mat-raised-button class="btn-login">Cancel</button>
+        <button mat-raised-button [disabled]="myForm.invalid" class="btn-login">Sign In</button>
+      </mat-card-actions>
+
+    </mat-card>
+  </form>
 </div>

@@ -56,3 +56,19 @@ WEB425-331H-343H Angular With Typescript
   * [Inversions of Control Containers and the Dependency Injection Pattern](https://martinfowler.com/articles/injection.html)
   * [The Dependency Injections pattern](https://stackify.com/dependency-injection/)
   * [Angular Dependency Injections](https://angular.io/guide/dependency-injection)
+
+[Week 5](https://github.com/imaaxa/web-425/tree/master/week-5)
+------
+* **Angular Development with TypeScript, Second Edition**
+  * Chapter 7 – Laying out pages with Flex Layout
+
+* **Videos**
+  * [Angular Material Tutorial](https://youtu.be/wPT3K3w6JtU)
+  * [Quick start with Angular Material and Flex-Layout](https://youtu.be/d6gJLs3ZZII)
+
+
+[Week 6](https://github.com/imaaxa/web-425/tree/master/week-6)
+------
+* **Angular Development with TypeScript, Second Edition**
+  * Chapter 8 – Implementing component communications
+  * Chapter 9 – Change detection and component lifecycle

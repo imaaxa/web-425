@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <!-- Menu -->
+  <mat-toolbar fxLayout="row" fxLayout.sm="column">
+    <mat-toolbar-row><a href="#" target="_blank">Home</a></mat-toolbar-row>
+    <mat-toolbar-row><a href="#" target="_blank">About</a></mat-toolbar-row>
+    <mat-toolbar-row><a href="#" target="_blank">Contact</a></mat-toolbar-row>
+  </mat-toolbar>
+  <!-- Menu -->
+
+  <!-- Content -->
+  <div class="container" fxLayout="row" fxLayout.sm="column" fxLayoutAlign="center stretch">
+    <div class="left" fxFlex=25% fxLayoutAlign="center"></div>
+    <div class="right" fxFlex=75% fxLayoutAlign="start center" fxLayout="column">
+
+      <div class="card outside" fxLayout="row">
+        <span class="card__label" fxFlex="45%">
+          AppComponent received:
+        </span>
+        <span class="card__content" fxFlex="auto">
+          {{ priceQuote?.stockSymbol }}
+          {{ priceQuote?.lastPrice | currency: 'USD' }}
+        </span>
+      </div>
+      <div class="card inside" fxLayout="row"><app-price-quote (lastPrice)="priceQuoteHandler($event)"></app-price-quote></div>
+
+    </div>
+  </div>
+  <!-- End Content -->
+</div>

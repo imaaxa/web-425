@@ -1,8 +1,12 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+// Component
 import { AppComponent } from './app.component';
 import { OrderComponent } from './order/order.component';
+
+// Form
 import { MatToolbarModule } from "@angular/material";
 import { MatInputModule } from "@angular/material";
 

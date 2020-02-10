@@ -17,9 +17,6 @@ import { componentFactoryName } from '@angular/compiler';
     }
 
     .card {
-      /*width: 80%;
-      min-width: 80%;
-      max-width: 80%;*/
       background-color: #bbbbbb;
       border-radius: .5em;
       border: 1px solid;

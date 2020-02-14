@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <!-- Menu -->
+  <mat-toolbar fxLayout="row" fxLayout.sm="column">
+    <mat-toolbar-row><a href="#" target="_blank">Home</a></mat-toolbar-row>
+    <mat-toolbar-row><a href="#" target="_blank">About</a></mat-toolbar-row>
+    <mat-toolbar-row><a href="#" target="_blank">Contact</a></mat-toolbar-row>
+  </mat-toolbar>
+  <!-- Menu -->
+
+  <!-- Content -->
+  <div class="container" fxLayout="row" fxLayout.sm="column" fxLayoutAlign="center stretch">
+    <div class="left" fxFlex=25% fxLayoutAlign="center"></div>
+    <div class="right" fxFlex=75% fxLayoutAlign="start center" fxLayout="column">
+      <form #f="ngForm" (ngSubmit)="onsubmit(f.value)">
+        <div>
+          <label for="username">Username: </label><input type="text" name="username" ngModel>
+        </div>
+        <div>
+          <label for="ssn">SSN: </label><input type="text" name="ssn" ngModel>
+        </div>
+        <div ngModelGroup="passwordsGroup">
+          <div>
+            <label for="password">Password: </label><input type="text" name="password" ngModel>
+          </div>
+          <div>
+            <label for="pcondirm">Condirm password: </label><input type="text" name="pcondirm" ngModel>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <!-- End Content -->
+</div>

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Gilliam Template Forms';
+
+  onSubmit(formData) {
+    console.log(formData);
+  }
 }

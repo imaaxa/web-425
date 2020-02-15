@@ -58,3 +58,13 @@ app-child {
 .parent {
   background-color: deeppink;
 }
+
+.form-element {
+  padding-bottom: 1em;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+label {
+  padding-right: .5em;
+}

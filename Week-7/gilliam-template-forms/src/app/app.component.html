@@ -9,26 +9,34 @@
 
   <!-- Content -->
   <div class="container" fxLayout="row" fxLayout.sm="column" fxLayoutAlign="center stretch">
+    <!-- Left column begin -->
     <div class="left" fxFlex=25% fxLayoutAlign="center"></div>
+    <!-- Left column end -->
+
+    <!-- Form begin -->
     <div class="right" fxFlex=75% fxLayoutAlign="start center" fxLayout="column">
-      <form #f="ngForm" (ngSubmit)="onsubmit(f.value)">
-        <div>
+
+      <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+        <div class="form-element">
           <label for="username">Username: </label><input type="text" name="username" ngModel>
         </div>
-        <div>
+        <div class="form-element">
           <label for="ssn">SSN: </label><input type="text" name="ssn" ngModel>
         </div>
         <div ngModelGroup="passwordsGroup">
-          <div>
+          <div class="form-element">
             <label for="password">Password: </label><input type="text" name="password" ngModel>
           </div>
-          <div>
-            <label for="pcondirm">Condirm password: </label><input type="text" name="pcondirm" ngModel>
+          <div class="form-element">
+            <label for="pcondirm">Confirm password: </label><input type="text" name="pcondirm" ngModel>
           </div>
         </div>
         <button type="submit">Submit</button>
       </form>
+      <!-- Form end -->
+
     </div>
+    <!-- Right column end -->
   </div>
   <!-- End Content -->
 </div>

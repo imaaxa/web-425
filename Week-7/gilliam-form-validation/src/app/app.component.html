@@ -1,0 +1,52 @@
+<div class="wrapper">
+  <!-- Menu -->
+  <mat-toolbar fxLayout="row" fxLayout.sm="column">
+    <mat-toolbar-row><a href="#" target="_blank">Home</a></mat-toolbar-row>
+    <mat-toolbar-row><a href="#" target="_blank">About</a></mat-toolbar-row>
+    <mat-toolbar-row><a href="#" target="_blank">Contact</a></mat-toolbar-row>
+  </mat-toolbar>
+  <!-- Menu -->
+
+  <!-- Content -->
+  <div class="container" fxLayout="row" fxLayout.sm="column" fxLayoutAlign="center stretch">
+    <!-- Left column begin -->
+    <div class="left" fxFlex=25% fxLayoutAlign="center"></div>
+    <!-- Left column end -->
+
+    <!-- Form begin -->
+    <div class="right" fxFlex=75% fxLayoutAlign="start center" fxLayout="column">
+
+      <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+        <mat-form-field>
+          <input
+            matInput
+            type="text"
+            name="telephone"
+            placeholder="Telephone"
+            ngModel
+            required
+            pattern="[0-9]*"
+            minlength="10"
+            #phone="ngModel"
+            [class.hasError]="phone.valid && phone.touched"
+          >
+          <mat-error *ngIf="!phone.valid && phone.touched">
+            Phone is required
+          </mat-error>
+          <mat-error *ngIf="phone.hasError('minlength') && phone.touched">
+            Phone has to have at least 10 digits
+          </mat-error>
+          <mat-error *ngIf="phone.hasError('pattern') && phone.touched">
+            Only digits are allowed
+          </mat-error>
+        </mat-form-field>
+
+        <button type="submit" [disabled]="f.invalid">Submit</button>
+      </form>
+      <!-- Form end -->
+
+    </div>
+    <!-- Right column end -->
+  </div>
+  <!-- End Content -->
+</div>

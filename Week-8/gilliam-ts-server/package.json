@@ -1,0 +1,19 @@
+{
+  "name": "gilliam-ts-server",
+  "version": "1.0.0",
+  "description": "Node and Express",
+  "private": true,
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "author": "Cory Gilliam",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.7.4",
+    "typescript": "^3.8.2"
+  }
+}
